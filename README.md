@@ -23,7 +23,22 @@
 
 Bu proje, beyaz şarapların kimyasal özelliklerini kullanarak kalitelerini analiz eder ve tahmin eder. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini ve kalite puanlarını içermektedir.
 
-## 📊 Veri Seti
+## Başlarken
+
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+
+```bash
+# Projeyi klonlayın
+git clone https://github.com/gkseelbngl/sarap-kalitesi-tahmini.git
+
+# Proje dizinine gidin
+cd sarap-kalitesi-tahmini
+
+# Gerekli kütüphaneleri yükleyin
+pip install -r requirements.txt
+```
+
+## Veri Seti
 
 Veri Seti: Beyaz Şarap Kalitesi Veri Seti
 Örnek Sayısı: 4898
