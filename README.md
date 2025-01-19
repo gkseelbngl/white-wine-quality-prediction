@@ -107,6 +107,8 @@ for i in plt.gca().containers:
 plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/782c6a4e-3921-4417-865f-0edf93fe2ee3)
+
 
 ## Korelasyon Analizi
 
@@ -119,6 +121,8 @@ sns.heatmap(data_corr, annot=True, fmt=".2f", cmap="coolwarm")
 plt.title("Korelasyon Isı Haritası")
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/7e193c27-1ac2-4f2a-846b-3b803383c1f8)
+
 ---
 # Model Eğitimi ve Değerlendirme
 
@@ -133,7 +137,11 @@ IQR = Q3 - Q1
 alt_sinir = Q1 - 1.5 * IQR
 ust_sinir = Q3 + 1.5 * IQR
 cleaned_data = data[~((data < alt_sinir) | (data > ust_sinir)).any(axis=1)]
+print(f"\nTemizlenmeden Önce Veri Seti Boyutu: {data.shape}")
+print(f"Temizlendikten Sonra Veri Seti Boyutu: {cleaned_data.shape}")
 ```
+![image](https://github.com/user-attachments/assets/f323ec92-c2ff-4c2c-8ca9-357891629f2f)
+
 
 ## Eğitim ve Test Verisi
 
@@ -147,17 +155,32 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, 
 
 ## Model Seçimi
 
-3 farklı model kullanıldı: Lojistik Regresyon, Karar Ağaçları ve Rastgele Orman.
+3 farklı model kullanıldı: *Lojistik Regresyon*, *Karar Ağaçları* ve *Rastgele Orman*.
 
 ```python
+# Lojistik Regresyon Modeli
 log_model = LogisticRegression(random_state=42)
 log_model.fit(X_train, y_train)
 y_pred_log = log_model.predict(X_test)
 ```
 
+```python
+# Karar Ağaçları Modeli
+tree_model = DecisionTreeClassifier(random_state=42)
+tree_model.fit(X_train, y_train)
+y_pred_tree = tree_model.predict(X_test)
+```
+
+```python
+# Rastgele Orman Modeli
+rf_model = RandomForestClassifier(random_state=42, n_estimators=100)
+rf_model.fit(X_train, y_train)
+y_pred_rf = rf_model.predict(X_test)
+```
+
 ## Performans Değerlendirme
 
-Her modelin performansı, karışıklık matrisi ve sınıflandırma raporu ile değerlendirildi.
+Her modeller performansı, karışıklık matrisi ve sınıflandırma raporu ile değerlendirildi.
 
 ```python
 def evaluate_model(y_test, y_pred, model_name):
@@ -173,8 +196,14 @@ def evaluate_model(y_test, y_pred, model_name):
     print(classification_report(y_test, y_pred))
 
 evaluate_model(y_test, y_pred_log, "Lojistik Regresyon")
+evaluate_model(y_test, y_pred_tree, "Karar Ağaçları")
+evaluate_model(y_test, y_pred_rf, "Rastgele Orman")
 ```
+![image](https://github.com/user-attachments/assets/c6f989f1-98be-49e3-8bcf-21558d82f41c)
+![image](https://github.com/user-attachments/assets/c0d06933-04cd-4ec3-98da-897efbfbbdce)
+![image](https://github.com/user-attachments/assets/c10eb5b6-05c7-4771-976d-2344bf670a1b)
 
+---
 ## ROC Eğrisi
 
 Farklı modellerin performansları, ROC eğrisinde karşılaştırıldı.
@@ -191,6 +220,8 @@ plt.ylabel("Doğru Pozitif Oranı")
 plt.legend()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/5219b058-cd08-407d-adeb-74b106c8fe41)
+
 ---
 ## Sonuçlar
 
