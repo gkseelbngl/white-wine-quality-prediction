@@ -51,7 +51,19 @@ Kernel > Restart & Run All
 
 ## Veri Seti
 
-Veri Seti: Beyaz Şarap Kalitesi Veri Seti
-Örnek Sayısı: 4898
-Özellik Sayısı: 11
-Hedef Değişken: Kalite (0-10 arası)
+Veri seti, winequality-white.csv dosyasından alınmıştır. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini (alkol oranı, asidite, pH değeri vb.) içermekte ve her şarap için bir kalite puanı (0-10 arası) ile etiketlenmiştir. **(Örnek Sayısı: 4898)**
+
+Özellikler:
+
+fixed acidity: Sabit asidite
+volatile acidity: Uçucu asidite
+citric acid: Sitrik asit
+residual sugar: Kalan şeker
+chlorides: Klorür
+free sulfur dioxide: Serbest sülfür dioksit
+total sulfur dioxide: Toplam sülfür dioksit
+density: Yoğunluk
+pH: pH değeri
+sulphates: Sülfatlar
+alcohol: Alkol oranı
+quality: Kalite (1-10 arası)
