@@ -55,8 +55,8 @@ Veri seti, winequality-white.csv dosyasından alınmıştır. Veri seti, beyaz �
 
 Özellikler:
 
-fixed acidity: Sabit asidite
-volatile acidity: Uçucu asidite
+* fixed acidity: Sabit asidite
+* volatile acidity: Uçucu asidite
 citric acid: Sitrik asit
 residual sugar: Kalan şeker
 chlorides: Klorür
