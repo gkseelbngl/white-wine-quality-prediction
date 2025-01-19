@@ -19,7 +19,7 @@
 9. [Gereksinimler](#gereksinimler)
 10. [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
 
-## 📋 Proje Hakkında
+## Proje Hakkında
 
 Bu proje, beyaz şarapların kimyasal özelliklerini kullanarak kalitelerini analiz eder ve tahmin eder. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini ve kalite puanlarını içermektedir.
 
