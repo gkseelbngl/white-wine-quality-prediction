@@ -1,14 +1,27 @@
 # Şarap Kalitesi Tahmin Projesi
 
+## İçindekiler
+1. [Proje Hakkında](#proje-hakkında)
+2. [Başlarken](#başlarken)
+3. [Veri Seti](#veri-seti)
+4. [Veri Analizi ve İşleme](#veri-analizi-ve-işleme)
+   - [Eksik Değerler](#eksik-değerler)
+   - [Hedef Değişkenin Dağılımı](#hedef-değişkenin-dağılımı)
+   - [Korelasyon Analizi](#korelasyon-analizi)
+5. [Model Eğitimi ve Değerlendirme](#model-eğitimi-ve-değerlendirme)
+   - [Aykırı Değer Temizliği](#aykırı-değer-temizliği)
+   - [Eğitim ve Test Verisi](#eğitim-ve-test-verisi)
+   - [Model Seçimi](#model-seçimi)
+   - [Performans Değerlendirme](#performans-değerlendirme)
+6. [Sonuçlar](#sonuçlar)
+7. [Video Açıklama](#video-açıklama)
+8. [Grafikler ve Görseller](#grafikler-ve-görseller)
+9. [Gereksinimler](#gereksinimler)
+10. [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
 
 ## 📋 Proje Hakkında
 
 Bu proje, beyaz şarapların kimyasal özelliklerini kullanarak kalitelerini analiz eder ve tahmin eder. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini ve kalite puanlarını içermektedir.
-
-## ![image](https://github.com/user-attachments/assets/ec30f631-2ce7-4633-b26c-459330f6e775)
- Amaç
-
-Projenin temel amacı, şarapların kimyasal özelliklerini kullanarak kalitelerini tahmin eden bir model geliştirmektir. Bu sayede şarap üreticileri ve değerlendiriciler için objektif bir kalite değerlendirme aracı sunulması hedeflenmiştir.
 
 ## 📊 Veri Seti
 
