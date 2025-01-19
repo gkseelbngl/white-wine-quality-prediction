@@ -1,4 +1,4 @@
-# Şarap Kalitesi Tahmin Projesi
+# Beyaz Şarap Kalitesi Tahmin Projesi
 
 ## İçindekiler
 1. [Proje Hakkında](#proje-hakkında)
