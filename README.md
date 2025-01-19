@@ -195,7 +195,7 @@ plt.show()
 
 Üç modelin performans karşılaştırması sonucunda:
 
-* **Lojistik Regresyon:** Basit ve hızlı ancak karmaşık verilere uyum sağlamakta zorluk çekebilir. (AUC = 0.79)
-* **Karar Ağaçları:** Overfitting riski bulunuyor, ancak doğru parametre ayarları ile daha iyi sonuçlar elde edilebilir. (AUC = 0.77)
-* **Rastgele Orman:** En yüksek genel performansı ve genelleme yeteneğini gösterdi. (AUC = 0.91)
+* **Lojistik Regresyon:** Basit ve hızlı ancak karmaşık verilere uyum sağlamakta zorluk çekebilir. *(AUC = 0.79)*
+* **Karar Ağaçları:** Overfitting riski bulunuyor, ancak doğru parametre ayarları ile daha iyi sonuçlar elde edilebilir. *(AUC = 0.77)*
+* **Rastgele Orman:** En yüksek genel performansı ve genelleme yeteneğini gösterdi. *(AUC = 0.91)*
 
