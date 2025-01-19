@@ -4,19 +4,20 @@
 1. [Proje Hakkında](#proje-hakkında)
 2. [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
 3. [Veri Seti](#veri-seti)
-4. [Veri Analizi ve İşleme](#veri-analizi-ve-işleme)
+4. [Kullanılan Yöntemler](#kullanılan-yöntemler)
+5. [Veri Analizi ve İşleme](#veri-analizi-ve-işleme)
    - [Eksik Değerler](#eksik-değerler)
    - [Hedef Değişkenin Dağılımı](#hedef-değişkenin-dağılımı)
    - [Korelasyon Analizi](#korelasyon-analizi)
-5. [Model Eğitimi ve Değerlendirme](#model-eğitimi-ve-değerlendirme)
+6. [Model Eğitimi ve Değerlendirme](#model-eğitimi-ve-değerlendirme)
    - [Aykırı Değer Temizliği](#aykırı-değer-temizliği)
    - [Eğitim ve Test Verisi](#eğitim-ve-test-verisi)
    - [Model Seçimi](#model-seçimi)
    - [Performans Değerlendirme](#performans-değerlendirme)
-6. [Sonuçlar](#sonuçlar)
-7. [Video Açıklama](#video-açıklama)
-8. [Grafikler ve Görseller](#grafikler-ve-görseller)
-9. [Gereksinimler](#gereksinimler)
+7. [Sonuçlar](#sonuçlar)
+8. [Video Açıklama](#video-açıklama)
+9. [Grafikler ve Görseller](#grafikler-ve-görseller)
+10. [Gereksinimler](#gereksinimler)
 
 ## Proje Hakkında
 
@@ -67,3 +68,11 @@ Veri seti, **winequality-white.csv** dosyasından alınmıştır. Veri seti, bey
 * **sulphates:** Sülfatlar
 * **alcohol:** Alkol oranı
 * **quality:** Kalite (1-10 arası)
+
+## Kullanılan Yöntemler
+
+Bu projede, üç farklı makine öğrenimi algoritması kullanılmıştır:
+
+1. Lojistik Regresyon: Basit ve hızlı bir modeldir. Ancak, karmaşık verilere çok iyi uyum sağlamayabilir.
+2. Karar Ağaçları: Veriyi sınıflandırmak için ağaç yapısını kullanır, ancak aşırı uyum riski vardır.
+3. Rastgele Orman: Karar ağaçlarının birleşiminden oluşan bir ansamble yöntemidir ve genellikle daha iyi performans gösterir.
