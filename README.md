@@ -236,6 +236,6 @@ plt.show()
 ---
 ## Proje Tanıtım Videosu
 
-[YouTube Tanıtım Videosu](linkburaya)
+[YouTube Tanıtım Videosu](https://youtu.be/YwLnLfOC_Bc)
 
 ---
