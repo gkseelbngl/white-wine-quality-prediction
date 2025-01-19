@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3e3a4c79-e766-439d-b317-695ab7b29eb8)
+![image](https://github.com/user-attachments/assets/1fc73446-d000-4207-b509-4a97557c7127)
 
 # Beyaz Şarap Kalitesi Tahmin Projesi
 
