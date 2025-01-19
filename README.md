@@ -29,13 +29,10 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 ```bash
 # Projeyi klonlayın
-git clone https://github.com/gkseelbngl/sarap-kalitesi-tahmini.git
+git clone https://github.com/gkseelbngl/white-wine-quality-prediction
 
 # Proje dizinine gidin
 cd sarap-kalitesi-tahmini
-
-# Gerekli kütüphaneleri yükleyin
-pip install -r requirements.txt
 ```
 
 ## Veri Seti
