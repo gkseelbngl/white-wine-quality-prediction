@@ -200,8 +200,8 @@ plt.show()
 * **Rastgele Orman:** En yüksek genel performansı ve genelleme yeteneğini gösterdi. *(AUC = 0.91)*
 
 ---
-## YouTube Tanıtım Videosu
+## Proje Tanıtım Videosu
 
-[Proje Tanıtım Videosu](linkburaya)
+[YouTube Tanıtım Videosu](linkburaya)
 
 ---
