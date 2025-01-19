@@ -6,18 +6,18 @@
 3. [Veri Seti](#veri-seti)
 4. [Kullanılan Yöntemler](#kullanılan-yöntemler)
 5. [Veri Analizi ve İşleme](#veri-analizi-ve-işleme)
-   - [Eksik Değerler](#eksik-değerler)
    - [Hedef Değişkenin Dağılımı](#hedef-değişkenin-dağılımı)
    - [Korelasyon Analizi](#korelasyon-analizi)
-6. [Model Eğitimi ve Değerlendirme](#model-eğitimi-ve-değerlendirme)
+   - [Aykırı Değer Tespiti](#aykırı-değer-tespiti)
+7. [Model Eğitimi ve Değerlendirme](#model-eğitimi-ve-değerlendirme)
    - [Aykırı Değer Temizliği](#aykırı-değer-temizliği)
    - [Eğitim ve Test Verisi](#eğitim-ve-test-verisi)
    - [Model Seçimi](#model-seçimi)
    - [Performans Değerlendirme](#performans-değerlendirme)
-7. [Sonuçlar](#sonuçlar)
-8. [Video Açıklama](#video-açıklama)
-9. [Grafikler ve Görseller](#grafikler-ve-görseller)
-10. [Gereksinimler](#gereksinimler)
+8. [Sonuçlar](#sonuçlar)
+9. [Video Açıklama](#video-açıklama)
+10. [Grafikler ve Görseller](#grafikler-ve-görseller)
+11. [Gereksinimler](#gereksinimler)
 
 ## Proje Hakkında
 
@@ -73,6 +73,25 @@ Veri seti, **winequality-white.csv** dosyasından alınmıştır. Veri seti, bey
 
 Bu projede, üç farklı makine öğrenimi algoritması kullanılmıştır:
 
-1. Lojistik Regresyon: Basit ve hızlı bir modeldir. Ancak, karmaşık verilere çok iyi uyum sağlamayabilir.
-2. Karar Ağaçları: Veriyi sınıflandırmak için ağaç yapısını kullanır, ancak aşırı uyum riski vardır.
-3. Rastgele Orman: Karar ağaçlarının birleşiminden oluşan bir ansamble yöntemidir ve genellikle daha iyi performans gösterir.
+1. **Lojistik Regresyon:** Basit ve hızlı bir modeldir. Ancak, karmaşık verilere çok iyi uyum sağlamayabilir.
+2. **Karar Ağaçları:** Veriyi sınıflandırmak için ağaç yapısını kullanır, ancak aşırı uyum riski vardır.
+3. **Rastgele Orman:** Karar ağaçlarının birleşiminden oluşan bir ansamble yöntemidir ve genellikle daha iyi performans gösterir.
+
+# Veri Analizi ve İşleme
+
+## Hedef Değişken Dağılımı
+
+Veri setindeki hedef değişken olan "quality" kalitesinin dağılımını inceledik ve aşağıdaki şekilde görselleştirdik:
+
+```python
+plt.figure(figsize=(8, 5))
+sns.countplot(data=data, x="quality", hue="quality", legend=False, palette="viridis")
+plt.title("Hedef Değişkeni Dağılımı: Kalite")
+plt.xlabel("Kalite")
+plt.ylabel("Sayım")
+# Çubukların üzerine değerleri yazdır
+for i in plt.gca().containers:
+    plt.gca().bar_label(i, padding=2)
+plt.tight_layout()
+plt.show()
+```
