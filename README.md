@@ -17,7 +17,6 @@
    - [ROC Eğrisi](#roc-eğrisi)
 7. [Sonuçlar](#sonuçlar)
 8. [Proje Tanıtım Videosu](#proje-tanıtım-videosu)
-9. [Grafikler ve Görseller](#grafikler-ve-görseller)
 
 ## Proje Hakkında
 
@@ -89,6 +88,8 @@ missing_values = data.isnull().sum()
 print("\nEksik Değerler:")
 print(missing_values)
 ```
+![image](https://github.com/user-attachments/assets/3163bc4d-1992-4a56-8044-91086879049c)
+
 
 ## Hedef Değişkenin Dağılımı
 
