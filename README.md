@@ -16,7 +16,7 @@
    - [Performans Değerlendirme](#performans-değerlendirme)
    - [ROC Eğrisi](#roc-eğrisi)
 7. [Sonuçlar](#sonuçlar)
-8. [Video Açıklama](#video-açıklama)
+8. [Proje Tanıtım Videosu](#proje-tanıtım-videosu)
 9. [Grafikler ve Görseller](#grafikler-ve-görseller)
 
 ## Proje Hakkında
@@ -52,7 +52,7 @@ Kernel > Restart & Run All
 
 ## Veri Seti
 
-Veri seti, **winequality-white.csv** dosyasından alınmıştır. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini (alkol oranı, asidite, pH değeri vb.) içermekte ve her şarap için bir kalite puanı (0-10 arası) ile etiketlenmiştir. *(Örnek Sayısı: 4898)*
+Veri seti, [winequality-white.csv](https://github.com/gkseelbngl/white-wine-quality-prediction/blob/main/winequality-white.csv) dosyasından alınmıştır. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini (alkol oranı, asidite, pH değeri vb.) içermekte ve her şarap için bir kalite puanı (0-10 arası) ile etiketlenmiştir. *(Örnek Sayısı: 4898)*
 
 **Özellikler:**
 
@@ -199,3 +199,9 @@ plt.show()
 * **Karar Ağaçları:** Overfitting riski bulunuyor, ancak doğru parametre ayarları ile daha iyi sonuçlar elde edilebilir. *(AUC = 0.77)*
 * **Rastgele Orman:** En yüksek genel performansı ve genelleme yeteneğini gösterdi. *(AUC = 0.91)*
 
+---
+## YouTube Tanıtım Videosu
+
+[Proje Tanıtım Videosu](linkburaya)
+
+---
