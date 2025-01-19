@@ -190,7 +190,7 @@ plt.ylabel("Doğru Pozitif Oranı")
 plt.legend()
 plt.show()
 ```
-
+---
 ## Sonuçlar
 
 Üç modelin performans karşılaştırması sonucunda:
