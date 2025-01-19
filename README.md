@@ -34,12 +34,12 @@ git clone https://github.com/gkseelbngl/white-wine-quality-prediction
 cd white-wine-quality-prediction
 
 # Gerekli kütüphaneleri yükleyin
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 Jupyter Notebook'u çalıştırma:
 
 ```bash
-jupyter notebook wine_quality_prediction.ipynb
+jupyter notebook winedataset.ipynb
 ```
 Tüm hücreleri çalıştırma:
 
