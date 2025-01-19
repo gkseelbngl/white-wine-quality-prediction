@@ -2,7 +2,7 @@
 
 ## İçindekiler
 1. [Proje Hakkında](#proje-hakkında)
-2. [Başlarken](#başlarken)
+2. [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
 3. [Veri Seti](#veri-seti)
 4. [Veri Analizi ve İşleme](#veri-analizi-ve-işleme)
    - [Eksik Değerler](#eksik-değerler)
@@ -17,13 +17,12 @@
 7. [Video Açıklama](#video-açıklama)
 8. [Grafikler ve Görseller](#grafikler-ve-görseller)
 9. [Gereksinimler](#gereksinimler)
-10. [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
 
 ## Proje Hakkında
 
 Bu proje, beyaz şarapların kimyasal özelliklerini kullanarak kalitelerini analiz eder ve tahmin eder. Veri seti, beyaz şarapların çeşitli kimyasal özelliklerini ve kalite puanlarını içermektedir.
 
-## Başlarken
+## Kurulum ve Çalıştırma
 
 Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
@@ -32,8 +31,23 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 git clone https://github.com/gkseelbngl/white-wine-quality-prediction
 
 # Proje dizinine gidin
-cd sarap-kalitesi-tahmini
+cd white-wine-quality-prediction
+
+# Gerekli kütüphaneleri yükleyin
+pip install -r requirements.txt
 ```
+Jupyter Notebook'u çalıştırma:
+
+```bash
+jupyter notebook wine_quality_prediction.ipynb
+```
+Tüm hücreleri çalıştırma:
+
+```bash
+# Jupyter Notebook içinde
+Kernel > Restart & Run All
+```
+
 
 ## Veri Seti
 
